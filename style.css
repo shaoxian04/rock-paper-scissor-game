@@ -1,0 +1,55 @@
+h1{
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#FFF0D1,#795757);
+    height: 100vh;
+}
+button{
+    font-size: 6rem;
+    margin: 0px 20px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    outline: 5px solid black;
+    cursor: pointer;
+    
+}
+.output{
+    font-size: 3rem;
+    text-align: left;
+    display: block;
+    margin-bottom: 1.2rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+#result{
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.score{
+    font-size: 2rem;
+    font-family: monospace;
+}
+.sliding{
+    animation-name: slide;
+    animation-duration: 3s;
+}
+button:hover{
+    transform: scale(1.2);
+}
+@keyframes slide {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+        transform: scale(1.2);
+    }
+}
